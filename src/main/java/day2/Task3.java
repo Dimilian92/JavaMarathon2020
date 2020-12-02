@@ -7,16 +7,16 @@ public class Task3 {
             Scanner s = new Scanner (System.in);
             int a = s.nextInt();
             int b = s.nextInt();
+            int c = b-a;
             if(a>=b){
                 System.out.println("Некорректный ввод");
             }
             else {
-                int i = a;
-                while (i <=b){
-                    if(i%5==0 && i%10!=0){
-                        System.out.print(i+" ");
+                while (c!=0){
+                    if((b-c)%5==0 && (b-c)%10!=0){
+                        System.out.print((b-c)+" ");
                     }
-                    i++;
+                    c--;
                 }
             }
     }
