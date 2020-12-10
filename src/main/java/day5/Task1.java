@@ -11,7 +11,7 @@ public class Task1 {
         System.out.println(myCar.getYear());
     }
 
-    static class Car{
+    static class Car {
         private int year;
         private String color;
         private String model;
